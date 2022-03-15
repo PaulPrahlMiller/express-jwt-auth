@@ -4,7 +4,6 @@ const connectDB = require("./config/database");
 const authRoutes = require("./routes/auth");
 const userRoutes = require("./routes/user");
 const pageRoutes = require("./routes/pages");
-const secureRoutes = require("./routes/secure");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
