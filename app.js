@@ -18,13 +18,11 @@ app.use(express.json());
 // PAGE ROUTES
 app.use("/", pageRoutes);
 
+// USER API ROUTES
 app.use("/api/user", userRoutes);
 
 // AUTHENTICATION API ROUTES
 app.use("/api/auth", authRoutes);
-
-// SECURE API ROUTS
-app.use("/api/secure", secureRoutes);
 
 // STATIC ASSETS
 app.use(express.static("public"));
